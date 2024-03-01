@@ -1,0 +1,11 @@
+server:
+  port: 9090
+jakarta:
+  sql:
+    DataSource:
+      authorDataSource:
+        dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+        dataSource:
+          url: jdbc:postgresql://kashin.db.elephantsql.com/phcudtji
+          user: phcudtji
+          password: UYHndSkWu6LQroQXn9AgMWZD9uDjxMgH
