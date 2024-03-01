@@ -16,7 +16,7 @@ public class BookRepository {
         return entityManager.createQuery("SELECT b FROM Book b", Book.class).getResultList();
     }
 
-    public Book findById(Long id) {
+    public Book findById(Integer id) {
         return entityManager.find(Book.class, id);
     }
 
@@ -28,7 +28,7 @@ public class BookRepository {
         entityManager.merge(p);
     }
 
-    public void delete(Long id) {
+    public void delete(Integer id) {
         entityManager.remove(findById(id));
     }
 }

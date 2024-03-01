@@ -11,7 +11,7 @@ import java.util.List;
 @Path("/authors")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@RegisterRestClient
+@RegisterRestClient(configKey = "AuthorRestClient")
 public interface AuthorRestClient {
     @GET
 
